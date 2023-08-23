@@ -16,4 +16,5 @@ module.exports = (app) => {
     //show by id
     app.get('/user/:userId', UserController.show)
 
+    app.post('/que1', UserController.multiply)
 }
