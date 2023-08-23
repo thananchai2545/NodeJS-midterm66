@@ -22,5 +22,10 @@ module.exports = {
     //show user by id
     show(req, res) {
         res.send('ดูข้อมูลผู้ใช้ ' + req.params.userId + " " + JSON.stringify(req.body))
-    }
+    },
+
+    multiply(req, res) {
+        res.send(JSON.stringify("ข้อ 1 x*x คำตอบ " + req.body.input * req.body.input))
+     },
+
 }
